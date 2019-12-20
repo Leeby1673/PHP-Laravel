@@ -1,4 +1,4 @@
-header start-->
+<!--header start -->
 <header class="l-header @isset($overlay) l-header_overlay @endisset">
 
     <div class="l-navbar l-navbar_expand 
@@ -7,7 +7,7 @@ header start-->
             <nav class="menuzord js-primary-navigation" role="navigation" aria-label="Primary Navigation">
 
                 <!--logo start-->
-                <a href="index.html" class="logo-brand">
+                <a href="/" class="logo-brand">
                     @isset ($overlay)
                         <img class="retina" src="assets/img/logo-dark.png" alt="Massive">
                     @else
@@ -41,4 +41,4 @@ header start-->
     </div>
 
 </header>
-<!--header end
+<!--header end -->
