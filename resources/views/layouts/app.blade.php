@@ -10,8 +10,8 @@
     @include('layouts.preloader')
 
     <div class="wrapper">
-        
-        @include('layouts.header')
+                          {{-- if else 簡短寫法，看有無設定overlay  若有就傳進去  不然就不傳 --}}
+        @include('layouts.header', ['overlay'=>(isset($overlay))? $overlay : null])
 		
 		@yield('hero')
 
