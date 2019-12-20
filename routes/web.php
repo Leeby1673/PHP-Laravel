@@ -24,10 +24,10 @@ Route::get('/contact', function () {
 });
 
 Route::get('/posts', function () {
-    return 'posts list';
+    return view('posts.list');
 });
 
 // /posts/9487
 Route::get('/posts/{id}', function ($id) {
-    return 'single post: '.$id;
+    return view('posts.show');
 });
