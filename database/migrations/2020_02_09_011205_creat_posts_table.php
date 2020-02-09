@@ -15,6 +15,8 @@ class CreatPostsTable extends Migration
     {
         Schema::creat('posts', function(Blueprint $table) {
             $table->increment('id');
+            $table->string('title');
+            $table->text('content');
             $table->timetamps();
         });
     }
@@ -26,6 +28,6 @@ class CreatPostsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('posts');
     }
 }
